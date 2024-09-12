@@ -1,0 +1,13 @@
+{{ define "welcome.tmpl" }}
+<!DOCTYPE html>
+<html>
+  {{ template "header.tmpl" }}
+  <body class="antialiased">
+    <div class="container">
+      <p class="text-3xl font-bold bg-red-900">
+        {{ .hello }} {{ .version }}
+      </p>
+    </div>
+  </body>
+</html>
+{{ end }}

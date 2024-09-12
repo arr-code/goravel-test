@@ -1,0 +1,14 @@
+{{ define "template" }}
+<!DOCTYPE html>
+<html>
+  {{ template "header" . }}
+  <body class="antialiased">
+    
+    <div class="container">
+      {{ block "content" . }}{{ end }}
+    </div>
+
+    {{ template "footer" . }}
+  </body>
+</html>
+{{ end }}
